@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <!--<ion-title>Home</ion-title>-->
+    <ion-searchbar placeholder="Descuento..."></ion-searchbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let descuento of descuentos">
+      <ion-avatar item-start>
+        <!--<img [src]="descuento.picture.medium">-->
+         <img [src]="descuento.img">
+      </ion-avatar>
+     <!-- <h2>{{ descuento.name.first | uppercase }}</h2>-->
+     <h2>{{ descuento.nombre | uppercase }}</h2>
+     <!-- <p>{{ descuento.email }}</p>-->
+    </ion-item>
+  </ion-list>
+ 
+  
+
+</ion-content>
